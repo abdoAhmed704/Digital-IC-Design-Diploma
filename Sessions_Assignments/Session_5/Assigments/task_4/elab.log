@@ -1,0 +1,49 @@
+Command: synth_design -rtl -top RAM_SINGLE_PORT
+Starting synth_design
+Using part: xc7a35ticpg236-1L
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 2404.152 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'RAM_SINGLE_PORT' [C:/Users/ABDOU/Desktop/Digital World/Digital Ic Diploma/design/section 5/Assigments/FOUR/memory_design.v:1]
+	Parameter MEM_WIDTH bound to: 16 - type: integer 
+	Parameter MEM_DEPTH bound to: 1024 - type: integer 
+	Parameter ADDR_SIZE bound to: 10 - type: integer 
+	Parameter ADDR_PIPELINE bound to: FALSE - type: string 
+	Parameter DOUT_PIPELINE bound to: TRUE - type: string 
+	Parameter PARITY_ENABLE bound to: 1 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element addr_pipe_reg was removed.  [C:/Users/ABDOU/Desktop/Digital World/Digital Ic Diploma/design/section 5/Assigments/FOUR/memory_design.v:33]
+INFO: [Synth 8-6155] done synthesizing module 'RAM_SINGLE_PORT' (1#1) [C:/Users/ABDOU/Desktop/Digital World/Digital Ic Diploma/design/section 5/Assigments/FOUR/memory_design.v:1]
+WARNING: [Synth 8-3331] design RAM_SINGLE_PORT has unconnected port addr_en
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 2404.152 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 2404.152 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 2404.152 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 2404.152 ; gain = 0.000
+5 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 2404.152 ; gain = 0.000

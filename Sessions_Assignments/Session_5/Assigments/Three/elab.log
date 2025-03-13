@@ -1,0 +1,51 @@
+Command: synth_design -rtl -top monitor_111
+Starting synth_design
+Using part: xc7a35ticpg236-1L
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 888.930 ; gain = 108.160
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'monitor_111' [C:/Users/ABDOU/Desktop/Digital World/Digital Ic Diploma/design/section 5/Assigments/THREE/monitor_bits.v:1]
+	Parameter START bound to: 3'b000 
+	Parameter D0_IS_1 bound to: 3'b001 
+	Parameter D1_IS_1 bound to: 3'b010 
+	Parameter D0_NOT_1 bound to: 3'b011 
+	Parameter D1_NOT_1 bound to: 3'b100 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "gray" *) [C:/Users/ABDOU/Desktop/Digital World/Digital Ic Diploma/design/section 5/Assigments/THREE/monitor_bits.v:9]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ABDOU/Desktop/Digital World/Digital Ic Diploma/design/section 5/Assigments/THREE/monitor_bits.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'monitor_111' (1#1) [C:/Users/ABDOU/Desktop/Digital World/Digital Ic Diploma/design/section 5/Assigments/THREE/monitor_bits.v:1]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 916.180 ; gain = 135.410
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 916.180 ; gain = 135.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 916.180 ; gain = 135.410
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35ticpg236-1L
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/ABDOU/Desktop/Digital World/Digital Ic Diploma/design/section 5/Assigments/THREE/Constraints_monitor.xdc]
+Finished Parsing XDC File [C:/Users/ABDOU/Desktop/Digital World/Digital Ic Diploma/design/section 5/Assigments/THREE/Constraints_monitor.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1294.191 ; gain = 513.422
+8 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:36 . Memory (MB): peak = 1294.191 ; gain = 513.422
